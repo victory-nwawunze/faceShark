@@ -23,20 +23,28 @@ class SignUpPage extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            TextFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Enter your email',
+            SizedBox(
+              width: 290,
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Enter your email',
+                  contentPadding: EdgeInsets.all(10),
+                ),
               ),
             ),
             const SizedBox(
               height: 40,
             ),
-            TextFormField(
-              obscureText: true,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Enter your password',
+            SizedBox(
+              width: 290,
+              child: TextFormField(
+                obscureText: true,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Enter your password',
+                  contentPadding: EdgeInsets.all(10),
+                ),
               ),
             ),
             const SizedBox(

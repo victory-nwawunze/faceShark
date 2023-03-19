@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 import 'package:otp_text_field/style.dart';
 
+import 'otp_successfully_received.dart';
+
 class OtpInputField extends StatelessWidget {
   const OtpInputField({super.key});
 
@@ -25,7 +27,18 @@ class OtpInputField extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                ElevatedButton(onPressed: () {}, child: const Text("Submit"))
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const OtpSucessfullyRecievedPage(),
+                      ),
+                    );
+                  },
+                  child: const Text("Submit"),
+                )
               ],
             ),
           ),
