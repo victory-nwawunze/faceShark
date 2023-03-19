@@ -1,3 +1,4 @@
+import 'package:facesharkapp/Screens/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hex_color/flutter_hex_color.dart';
 
@@ -58,8 +59,19 @@ class ConfirmOTP extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
-                        child: const Text("Continue"),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red,
+                          foregroundColor: Colors.white,
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignUpPage(),
+                            ),
+                          );
+                        },
+                        child: const Text("Back"),
                       ),
                       const SizedBox(
                         width: 20,
