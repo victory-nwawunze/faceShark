@@ -2,6 +2,8 @@ import 'package:facesharkapp/Screens/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hex_color/flutter_hex_color.dart';
 
+import 'otp_input_field.dart';
+
 class ConfirmOTP extends StatelessWidget {
   const ConfirmOTP({super.key});
 
@@ -77,7 +79,14 @@ class ConfirmOTP extends StatelessWidget {
                         width: 20,
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const OtpInputField(),
+                            ),
+                          );
+                        },
                         child: const Text("Continue"),
                       ),
                     ],
