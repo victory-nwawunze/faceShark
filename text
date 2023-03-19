@@ -1,0 +1,18 @@
+ Text(
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic),
+                    "We really appreciate you "),
+                Text(
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic),
+                    "stopping by, kindly login to "),
+                Text(
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic),
+                    "your account, if you dont  "),
+                Text("have an account you can "),
+                Text("create an create an account   "),
