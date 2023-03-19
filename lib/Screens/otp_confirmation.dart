@@ -60,7 +60,7 @@ class ConfirmOTP extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ElevatedButton(
+                      ElevatedButton.icon(
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.red,
                           foregroundColor: Colors.white,
@@ -73,12 +73,17 @@ class ConfirmOTP extends StatelessWidget {
                             ),
                           );
                         },
-                        child: const Text("Back"),
+                        label: const Text("Back"),
+                        icon: const Icon(
+                          Icons.arrow_left,
+                          size: 24.0,
+                        ),
+                        // child: const Text("Back"),
                       ),
                       const SizedBox(
                         width: 20,
                       ),
-                      ElevatedButton(
+                      ElevatedButton.icon(
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -87,7 +92,11 @@ class ConfirmOTP extends StatelessWidget {
                             ),
                           );
                         },
-                        child: const Text("Continue"),
+                        icon: const Icon(
+                          Icons.arrow_right,
+                          size: 24.0,
+                        ),
+                        label: const Text("Continue"),
                       ),
                     ],
                   ),
