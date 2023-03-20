@@ -1,3 +1,4 @@
+import 'package:facesharkapp/Screens/information_page.dart';
 import 'package:flutter/material.dart';
 
 class OtpSucessfullyRecievedPage extends StatelessWidget {
@@ -24,7 +25,14 @@ class OtpSucessfullyRecievedPage extends StatelessWidget {
                   height: 10,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const InformationPage(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: const StadiumBorder(),
                   ),

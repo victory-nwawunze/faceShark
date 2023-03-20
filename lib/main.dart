@@ -75,9 +75,11 @@ class MainScreen extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const AccountSetUp()));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const AccountSetUp(),
+                        ),
+                      );
                     },
                     child: const Text("Continue"),
                   )
